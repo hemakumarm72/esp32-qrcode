@@ -2,6 +2,8 @@
 
 Code provided in this repository gets the image from camera and prints it out as ASCII art to the serial port.
 
+support only esp-idf-4.4.5
+
 ## Function
 + support OV2640 to output JPEG format .
 + support OV2640 and OV7725 to output grayscale format.
