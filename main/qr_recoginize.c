@@ -30,7 +30,9 @@ static const char *data_type_str(int dt) {
 
 	return "unknown";
 }
-
+void app_main()  {
+	
+}
 void dump_cells(const struct quirc_code *code) {
 	int u, v;
 
@@ -62,8 +64,10 @@ void dump_data(const struct quirc_data *data) {
 	printf("    Length: %d\n", data->payload_len);
 	printf("    Payload: %s\n", data->payload);
 
-	if (data->eci)
-		printf("    ECI: %d\n", data->eci);
+	// if (data->eci) {
+    //    printf("    ECI: %d\n", data->eci);
+	// }
+	
 }
 
 static void dump_info(struct quirc *q) {
@@ -136,32 +140,32 @@ void qr_recoginze(void *pdata) {
 	vTaskDelete(NULL) ;
 }
 
-//int qr_recoginze() {
-//	printf("begin to qr_recoginze\r\n");
-//	struct quirc *q;
-//	struct quirc_data qd;
-//	uint8_t *image;
-//	q = quirc_new();
-//	if (!q) {
-//		perror("can't create quirc object\r\n");
-//		return RECONGIZE_FAIL;
-//	}
-//	if (quirc_resize(q, camera_get_fb_width(), camera_get_fb_height()) < 0)
-//		return RECONGIZE_FAIL;
-//	image = quirc_begin(q, NULL, NULL);
-//	memcpy(image, camera_get_fb(), camera_get_data_size());
-//	quirc_end(q);
-//	int id_count = quirc_count(q);
-//	if (id_count == 0) {
-//		fprintf(stderr, "Error: not a valid qrcode\n");
-//		return RECONGIZE_FAIL;
-//	}
-//
-//	struct quirc_code code;
-//	quirc_extract(q, 0, &code);
-//	quirc_decode(&code, &qd);
-//	dump_info(q);
-//	quirc_destroy(q);
-//	return RECONGIZE_OK;
-//}
-//
+// int qr_recoginze() {
+// 	printf("begin to qr_recoginze\r\n");
+// 	struct quirc *q;
+// 	struct quirc_data qd;
+// 	uint8_t *image;
+// 	q = quirc_new();
+// 	if (!q) {
+// 		perror("can't create quirc object\r\n");
+// 		return RECONGIZE_FAIL;
+// 	}
+// 	if (quirc_resize(q, camera_get_fb_width(), camera_get_fb_height()) < 0)
+// 		return RECONGIZE_FAIL;
+// 	image = quirc_begin(q, NULL, NULL);
+// 	memcpy(image, camera_get_fb(), camera_get_data_size());
+// 	quirc_end(q);
+// 	int id_count = quirc_count(q);
+// 	if (id_count == 0) {
+// 		fprintf(stderr, "Error: not a valid qrcode\n");
+// 		return RECONGIZE_FAIL;
+// 	}
+
+// 	struct quirc_code code;
+// 	quirc_extract(q, 0, &code);
+// 	quirc_decode(&code, &qd);
+// 	dump_info(q);
+// 	quirc_destroy(q);
+// 	return RECONGIZE_OK;
+// }
+

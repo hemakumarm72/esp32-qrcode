@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/hemakumar/ESP32_CAMERA_QR/build/CMakeFiles/bootloader
+/home/hemakumar/ESP32_CAMERA_QR/build/CMakeFiles/bootloader.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/CMakeFiles/bootloader-complete.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/hemakumar/ESP32_CAMERA_QR/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
